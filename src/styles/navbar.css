@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --mainColor: #2f4a70;
+    --mainColorLight: #5767AA;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+nav a {
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+    display: inline-block;
+    transform: scale(1.1);
+}
+
+.homeIcon {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+}
+
+.homeIcon:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: transparent;
+    color: var(--textColor);
+    visibility: invisible;
+    opacity: 0;
+}
+
+@media screen and (max-width: 850px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive-nav {
+        transform: none;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    header .nav-close-btn {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+    }
+}

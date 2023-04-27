@@ -1,8 +1,11 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 function App() {
     return (
-        <h1>Aashu Jatt</h1>
+        <>
+            <NavBar />
+        </>
     );
 }
 
