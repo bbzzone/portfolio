@@ -10,7 +10,7 @@
 }
 
 :root {
-    --mainColor: #2f4a70;
+    --mainColor: #191818;
     --mainColorLight: #5767AA;
     --secondaryColor: #DB2B39;
     --textColor: #eee;
@@ -22,9 +22,13 @@ header {
     justify-content: space-between;
     height: 60px;
     padding: 0 2rem;
-    background-color: var(--mainColor);
+    background-color: transparent;
     color: var(--textColor);
 }
+
+/* nav {
+    background-color: transparent;
+} */
 
 nav a {
     margin: 0 2rem;
@@ -57,13 +61,23 @@ header .nav-btn {
     border: none;
     outline: transparent;
     color: var(--textColor);
-    visibility: invisible;
+    display: none;
     opacity: 0;
 }
 
+header div a {
+    text-decoration: none;
+    color: var(--textColor);
+    margin: 0.35rem;
+}
+
 @media screen and (max-width: 850px) {
-    header .nav-btn {
-        visibility: visible;
+    header {
+        background-color: var(--mainColor);
+    }
+
+    div .nav-btn {
+        display: inline-block;
         opacity: 1;
     }
 
@@ -95,5 +109,9 @@ header .nav-btn {
         position: fixed;
         top: 2rem;
         right: 2rem;
+    }
+
+    header div a {
+        display: none;
     }
 }

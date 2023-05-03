@@ -1,0 +1,71 @@
+
+:root {
+    --mainColor: #191818;
+    --mainColorLight: #5767AA;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+#home {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--textColor);
+}
+
+#home img {
+    height: 210px;
+    margin: auto;
+    opacity: 0.93;
+    transition: all .5s ease-in-out;
+}
+
+#home img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+#home p {
+    text-align: center;
+    margin: 0.5rem 20%;
+}
+
+#home p.homeName {
+    margin: 1rem auto;
+    color: var(--textColor);
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+#home h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 25%;
+
+    background: linear-gradient(to right, var(--textColor), rgb(100, 100, 100));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 850px) {
+    #home p {
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    #home h1 {
+        margin: 10px 0;
+        font-size: 1.7rem;
+    }
+
+    #home img {
+        opacity: 1;
+    }
+
+    #home p.homeName {
+        opacity: 1;
+    }
+}

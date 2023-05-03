@@ -2,7 +2,10 @@ import React, { useState, useRef } from "react";
 import HomeIcon from '@mui/icons-material/Home';
 import HorizontalSplitOutlinedIcon from '@mui/icons-material/HorizontalSplitOutlined';
 import ViewWeekIcon from '@mui/icons-material/ViewWeek';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 
+import stackIcon from '../images/stack.png'
 import "../styles/navbar.css"
 
 function NavBar() {
@@ -30,25 +33,30 @@ function NavBar() {
                     href="#Skills">
                         Skills
                 </a>
-                <a 
-                    onClick={() => setSelected("projects")} 
-                    className={selected==="projects"?"selected nav-item":"nav-item" } 
+                <a
+                    onClick={() => setSelected("projects")}
+                    className={selected==="projects"?"selected nav-item":"nav-item" }
                     href="#Projects">
                         Projects
                 </a>
-                <a 
-                    onClick={() => setSelected("about")} 
-                    className={selected==="about"?"selected nav-item":"nav-item" } 
+                <a
+                    onClick={() => setSelected("about")}
+                    className={selected==="about"?"selected nav-item":"nav-item" }
                     href="#About">
                         About
                 </a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
-                    <HorizontalSplitOutlinedIcon />
+                    <ViewWeekIcon />
                 </button>
             </nav>
-            <button className="nav-btn" onClick={showNavBar}>
-                <ViewWeekIcon />
-            </button>
+            <div>
+                <a href="https://github.com/desdemona2"><GitHubIcon /></a>
+                <a href="https://stackoverflow.com/users/14276207/"><img src={stackIcon} alt="stack-overflow" style={{height: "1.6rem"}}/></a>
+                <a href="mailto:bhavukshm@gmail.com"> <EmailIcon /> </a>
+                <button className="nav-btn" onClick={showNavBar}>
+                    <HorizontalSplitOutlinedIcon />
+                </button>
+            </div>
         </header>
     );
 }

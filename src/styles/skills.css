@@ -1,0 +1,11 @@
+
+:root {
+    --mainColor: #191818;
+    --mainColorLight: #5767AA;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+#skill div {
+    background-color: rgb(100, 100, 100);
+}
