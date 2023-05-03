@@ -1,0 +1,25 @@
+
+
+div#project {
+    margin: 1.5rem auto;
+    width: 40%;
+    background: rgb(50, 50, 50);
+    text-align: center;
+    border-radius: 3rem;
+    padding: 1.3rem 0;
+}
+
+div#project a {
+    text-decoration: none;
+    color: rgb(200, 200, 200, 0.85);
+    transition: all 0.5s ease-in-out;
+}
+
+div#project a .year {
+    font-size: 0.4rem;
+    opacity: 0.6;
+}
+
+div#project a:hover {
+    color: rgb(100, 200, 120, 1);
+}

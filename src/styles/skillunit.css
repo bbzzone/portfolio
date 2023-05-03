@@ -1,0 +1,21 @@
+
+:root {
+    --mainColor: #191818;
+    --mainColorLight: #5767AA;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+div#skill {
+    background-color: rgb(50, 50, 50);
+    color: var(--textColor);
+    margin: 0.5rem 0.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    min-width: 10rem;
+}
+
+div#skill p {
+    margin: 1rem 0 0;
+}

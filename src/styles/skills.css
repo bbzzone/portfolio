@@ -6,6 +6,30 @@
     --textColor: #eee;
 }
 
-#skill div {
-    background-color: rgb(100, 100, 100);
+div#Skills {
+    padding: 2rem 0;
+    margin: auto;
+    width: 60%;
+}
+
+div#Skills h1 {
+    color: rgb(200, 200, 200, 0.9);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+div#Skills .list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+    div#Skills {
+        padding: 2rem 0;
+        margin: auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
