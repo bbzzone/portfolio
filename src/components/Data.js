@@ -1,6 +1,14 @@
 
-import { Description } from '@mui/icons-material';
 import React from 'react';
+import Leetcode from "../images/leetcode.svg";
+import CodeChef from "../images/codechef.svg";
+import Handbook from "../images/handbook.png";
+
+const aboutme = {
+    highlight: "Hi there! My name is Bhavuk and I'm an aspiring web developer. While I don't have any professional experience in web development, I'm passionate about coding and building websites.",
+    technology: "I've completed some online tutorials and coursework on technologies such as React, Express, and mongooDB, and have worked on personal projects including ToDo List, Notes App, and Blog Website. I'm constantly seeking out new challenges and opportunities to learn and grow as a developer. I can also develope native(java) android Applications",
+    buttering: "What I love about web development is the endless possibilities it offers. I'm excited to work on projects that can make a positive impact on people's lives and change the world for the better."
+}
 
 const data = {
     SkillsList: [
@@ -104,6 +112,27 @@ const data = {
             description: "Real Time face recognition using Python and Open-CV",
             year: 2021,
             link: "https://github.com/desdemona2/FaceReco"
+        }
+    ],
+    AboutMe: aboutme,
+    ProfileLinks: [
+        {
+            id: 1,
+            itemName: "Leetcode",
+            link: "https://leetcode.com/failed_again/",
+            icon: Leetcode
+        },
+        {
+            id: 2,
+            itemName: "CodeChef",
+            link: "https://www.codechef.com/users/redheadhammer",
+            icon: CodeChef
+        },
+        {
+            id: 3,
+            itemName: "Handbook",
+            link: "https://desdemona2.github.io/bbz-zone/",
+            icon: Handbook
         }
     ]
 }

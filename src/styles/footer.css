@@ -1,0 +1,75 @@
+
+:root {
+    --mainColor: #191818;
+    --mainColorLight: #5767AA;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+div#About {
+    background-color: rgb(121, 121, 117, 0.15);
+    min-height: 150px;
+    margin-top: 1rem;
+    padding: 0.9rem 0 50px;
+}
+
+div#About .highlight img {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    left: 2px;
+}
+
+div#About h2 {
+    color: rgb(200, 200, 200, 0.9);
+    text-align: center;
+    font-size: 3rem;
+}
+
+div#About p {
+    color: rgb(200, 200, 200, 0.9);
+    width: 60%;
+    margin: 1rem auto 0;
+    line-height: 1.2;
+    letter-spacing: 0.025em;
+    margin-top: 30px;
+}
+
+div#About p.highlight {
+    color: rgb(200, 200, 200, 0.9);
+    width: 60%;
+    margin: 1rem auto 0;
+    line-height: 1.2;
+    letter-spacing: 0.025em;
+    font-size: 1.2rem;
+    font-style: italic;
+    background-color: rgb(100, 100, 100, 0.4);
+    padding: 40px 50px;
+    position: relative;
+    border-radius: 3rem;
+}
+
+div#About #links {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+div#About #links img {
+    max-height: 1.85rem;
+    min-height: 1.55rem;
+    transition: all 0.5s ease-in-out;
+}
+
+div#About #links img:hover {
+    transform: scale(1.15) rotate(360deg);
+}
+
+@media screen and (max-width: 800px) {
+    div#About p {
+        width: 80%;
+    }
+}
