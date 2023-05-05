@@ -13,3 +13,9 @@ div#Projects .projectlist {
     width: 60%;
     margin: auto;
 }
+
+@media screen and (max-width: 800px) {
+    div#Projects .projectlist {
+        width: 90%;
+    }
+}

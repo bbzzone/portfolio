@@ -1,18 +1,24 @@
 
 
+:root {
+    --mainColor: #191818;
+    --mainColorLight: #5767AA;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
 div#project {
     margin: 1.5rem auto;
     width: 40%;
     background: rgb(50, 50, 50);
     text-align: center;
     border-radius: 3rem;
-    padding: 1.3rem 0;
+    padding: 1.3rem 1rem;
 }
 
 div#project a {
     text-decoration: none;
     color: rgb(200, 200, 200, 0.85);
-    transition: all 0.5s ease-in-out;
 }
 
 div#project a .year {
@@ -20,6 +26,25 @@ div#project a .year {
     opacity: 0.6;
 }
 
-div#project a:hover {
-    color: rgb(100, 200, 120, 1);
+div#project a h2 {
+    transition: all 0.5s ease-in-out;
+}
+
+div#project a p {
+    transition: all 0.5s ease-in-out;
+}
+
+div#project a p:hover {
+    color: rgb(200, 200, 200, 0.9);
+    transform: scale(1.01);
+}
+
+div#project a h2:hover {
+    color: var(--secondaryColor);
+}
+
+@media screen and (max-width: 800px) {
+    div#project {
+        width: 80%;
+    }
 }
